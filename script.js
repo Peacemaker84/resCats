@@ -129,7 +129,7 @@ const showForm = function (data) {
 // );
 
 // запрос на сервер
-fetch(`https://sb-cats.herokuapp.com/api/2/Peacemaker84/show`)
+fetch(`https://srv.petiteweb.dev/api/2/Peacemaker84/show`)
   // ответ от сервера что такой запрос существует
   .then((res) => res.json())
   // получение результата
@@ -153,7 +153,7 @@ fetch(`https://sb-cats.herokuapp.com/api/2/Peacemaker84/show`)
 // JSON.parse(str) - сделает из строки объект (если внутри строки объек)
 
 const addCat = function (cat) {
-  fetch(`https://sb-cats.herokuapp.com/api/2/Peacemaker84/add`, {
+  fetch(`https://srv.petiteweb.dev/api/2/Peacemaker84/add`, {
     method: "POST",
     headers: {
       // обязательно для POST/PUT/PATCH
